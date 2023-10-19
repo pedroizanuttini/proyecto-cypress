@@ -1,8 +1,10 @@
 import { CommonPageElements } from "./common-page.elements";
+import { CommonPageData } from "./common-page.data";
 
 export class CommonPageMethods{
     static navigateTodemoBlaze(){
-        cypress.visit(CommonPageMethods.url);
+        cy.clearCookies();
+        cy.visit(CommonPageData.url);
     }
 
     static clickOnHomeOption(){
@@ -27,5 +29,11 @@ export class CommonPageMethods{
 
     static clickOnSignUp(){
         CommonPageElements.topMenu.signUp.click();
+    }
+
+    static verifyAlert(expectedMessage){
+        cy.on('window.alert',(str)=>{
+            expect(str).to.equal(expectedMessage)
+        })
     }
 }

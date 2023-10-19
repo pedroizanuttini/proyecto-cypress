@@ -10,9 +10,6 @@ export class CommonPageElements{
             get aboutUs(){
                 return cy.contains('a','About us')
             },
-            get aboutUs(){
-                return cy.contains('a','About us')
-            },
             get cart(){
                 return cy.contains('a','Cart')
             },
