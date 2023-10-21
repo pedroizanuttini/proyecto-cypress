@@ -15,4 +15,8 @@ export class HomeMethods{
     static clickOnProductLink(productName){
         Homeelements.product(productName).click()
     }
+
+    static verifyProductDisplayed(productName){
+        Homeelements.product(productName).should('be.visible')
+    }
 }
