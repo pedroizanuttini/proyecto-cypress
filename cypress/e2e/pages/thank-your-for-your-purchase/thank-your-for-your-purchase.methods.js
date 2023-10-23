@@ -2,7 +2,7 @@ import { ThankYouForYourPurchaseElements } from "./thank-your-for-your-purchase.
 
 export class ThankYouForYourPurchasemethods{
     static clickOnOkButton(){
-        ThankYouForYourPurchaseElements.buttons.click()
+        ThankYouForYourPurchaseElements.buttons.ok.click()
     }
 
     static verifyGreenCheckMark(){

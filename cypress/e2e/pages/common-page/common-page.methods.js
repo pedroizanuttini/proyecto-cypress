@@ -9,6 +9,9 @@ export class CommonPageMethods{
 
     static clickOnHomeOption(){
         CommonPageElements.topMenu.home.click();
+        Cypress.on('uncaught:exception', (err, runnable) => {
+            return false
+          })
     }
 
     static clickOnContact(){
@@ -21,6 +24,9 @@ export class CommonPageMethods{
 
     static clickOnCart(){
         CommonPageElements.topMenu.cart.click();
+        Cypress.on('uncaught:exception', (err, runnable) => {
+            return false
+          })
     }
 
     static clickOnLogin(){

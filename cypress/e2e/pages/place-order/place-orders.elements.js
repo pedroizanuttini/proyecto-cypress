@@ -11,13 +11,13 @@ export class PlaceOrderElements{
                 return cy.get('input#city')
             },
             get creditcard(){
-                cy.get('input#card')
+                return cy.get('input#card')
             },
             get month(){
-                cy.get('input#month')
+                return cy.get('input#month')
             },
             get year(){
-                cy.get('input#year')
+                return cy.get('input#year')
             }
         }
     }

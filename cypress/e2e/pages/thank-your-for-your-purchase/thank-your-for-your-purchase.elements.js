@@ -10,7 +10,8 @@ export class ThankYouForYourPurchaseElements{
     static get icons(){
         return {
             get greenCheckMark(){
-                return cy.get('.sa-placeholder')
+                return cy.get('div.sa-placeholder')
+                
             }
         }
     }

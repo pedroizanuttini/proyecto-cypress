@@ -10,10 +10,10 @@ export class PlaceOrderMethods{
     static insertCity(city){
         PlaceOrderElements.textboxes.city.invoke('val',city)
     }
-    static insertCreditCard(cardNumber){
-        PlaceOrderElements.textboxes.creditcard.invoke('val',cardNumber)
+    static insertCreditCard(creditCardNumber){
+        PlaceOrderElements.textboxes.creditcard.invoke('val',creditCardNumber)
     }
-    static insertCreditCard(month){
+    static insertMonth(month){
         PlaceOrderElements.textboxes.month.invoke('val',month)
     }
     static insertYear(year){
@@ -28,6 +28,13 @@ export class PlaceOrderMethods{
         PlaceOrderElements.buttons.purchase.click()
     }
     
-    
+    static insertOrderInformation(data){
+        this.insertName(data.name)
+        this.insertCountry(data.country)
+        this.insertCity(data.city)
+        this.insertCreditCard(data.creditCardNumber)
+        this.insertMonth(data.month)
+        this.insertYear(data.year)
+    }
     
 }
