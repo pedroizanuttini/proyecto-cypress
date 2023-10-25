@@ -10,7 +10,7 @@ const password =CommonPageMethods.generateRandomString(10);
 const existingUser = LoginData.validCredentials.username
 
 
-xdescribe(CommonPageData.testSuites.registro,()=>{
+describe(CommonPageData.testSuites.registro,()=>{
     it('Registro de usuario valido',()=>{
         Logger.stepNumber(1);
         Logger.step('Navegar a la página de inicio.');
@@ -35,7 +35,7 @@ xdescribe(CommonPageData.testSuites.registro,()=>{
 
     });
 
-    xit('Registro de usuario invalido',()=>{
+    it('Registro de usuario invalido',()=>{
         Logger.stepNumber(1);
         Logger.step('Navegar a la página de inicio.');
         CommonPageMethods.navigateTodemoBlaze();
