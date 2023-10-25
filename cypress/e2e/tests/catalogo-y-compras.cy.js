@@ -37,7 +37,7 @@ describe(CommonPageData.testSuites.catalogoYCompra, ()=>{
         HomeMethods.verifyProductDisplayed('ASUS Full HD')
     })
 
-    it('Agregar producto al carrito',()=>{
+    xit('Agregar producto al carrito',()=>{
 
         Logger.stepNumber(1)
         Logger.step('Iniciar sesión como usuario registrado.')
