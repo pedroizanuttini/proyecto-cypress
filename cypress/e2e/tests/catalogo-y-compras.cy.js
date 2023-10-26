@@ -35,6 +35,7 @@ describe(CommonPageData.testSuites.catalogoYCompra, ()=>{
         Logger.verification(' Verificar que se muestra la lista de productos correspondiente a la categoría seleccionada')
         HomeMethods.verifyProductDisplayed('Apple monitor 24')
         HomeMethods.verifyProductDisplayed('ASUS Full HD')
+
     })
 
     it('Agregar producto al carrito',()=>{
@@ -72,6 +73,10 @@ describe(CommonPageData.testSuites.catalogoYCompra, ()=>{
         ProductDetailsMethods.verifyProductAddedMessage();
         CommonPageMethods.clickOnCart();
         cartMethods.verifyProductAdded(product)
+
+        Logger.postCondition('Empty cart and logout')
+        cartMethods.emptyCart(user.username,user.password)
+        CommonPageMethods.logout()
     })
 
     it('Realizar una compra',()=>{
@@ -137,6 +142,10 @@ describe(CommonPageData.testSuites.catalogoYCompra, ()=>{
         ThankYouForYourPurchasemethods.verifyGreenCheckMark();
         ThankYouForYourPurchasemethods.clickOnOkButton();
         HomeMethods.verifyHomePageIsShown();
+
+        Logger.postCondition('Logout')
+        CommonPageMethods.logout();
+        
 
 
     })
