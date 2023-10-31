@@ -1,0 +1,12 @@
+
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: lastest
+  pre_build:
+    commends:
+      - npm install
+    build:
+      commands:
+        - npm run cy:parallel      
