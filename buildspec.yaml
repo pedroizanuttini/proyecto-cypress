@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: latest
   pre_build:
-    commends:
+    commands:
       - npm install
   build:
     commands:
