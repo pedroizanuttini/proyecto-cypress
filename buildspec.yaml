@@ -1,10 +1,10 @@
 
 version: 0.2
 phases:
-  install:
+  INSTALL:
     runtime-versions:
       nodejs: latest
-  pre_build:
+  PRE_BUILD:
     commends:
       - npm install
     build:
