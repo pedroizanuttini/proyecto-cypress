@@ -7,6 +7,6 @@ phases:
   pre_build:
     commends:
       - npm install
-    build:
-      commands:
-        - npm run cy:parallel      
+  build:
+    commands:
+      - npm run cy:parallel      
