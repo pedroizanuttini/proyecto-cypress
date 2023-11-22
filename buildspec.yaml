@@ -6,8 +6,7 @@ phases:
       nodejs: latest
   pre_build:
     commands:
-      - yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
-      - npm run cy:parallel
+      - npm install
   build:
     commands:
-      - npm run test   
+      - npm run cy:parallel  
