@@ -9,4 +9,4 @@ phases:
       - npm install
   build:
     commands:
-      - npm run cy:parallel  
+      - npm run test
