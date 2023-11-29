@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Nov 17 15:27:45 AEDT 2023","Fri Nov 17 15:27:51 AEDT 2023","6007","","Catalogo y compra","","","","Navegacion por categorias",""
-"passed","Fri Nov 17 15:28:06 AEDT 2023","Fri Nov 17 15:28:29 AEDT 2023","23484","","Catalogo y compra","","","","Agregar producto al carrito",""
-"passed","Fri Nov 17 15:27:21 AEDT 2023","Fri Nov 17 15:27:37 AEDT 2023","16557","","Autenticacion","","","","Inicio de sesion valido",""
-"passed","Fri Nov 17 15:28:29 AEDT 2023","Fri Nov 17 15:28:48 AEDT 2023","18848","","Catalogo y compra","","","","Realizar una compra",""
-"passed","Fri Nov 17 15:28:57 AEDT 2023","Fri Nov 17 15:29:01 AEDT 2023","3636","","Registro","","","","Registro de usuario invalido",""
-"passed","Fri Nov 17 15:28:52 AEDT 2023","Fri Nov 17 15:28:57 AEDT 2023","5214","","Registro","","","","Registro de usuario valido",""
-"passed","Fri Nov 17 15:27:38 AEDT 2023","Fri Nov 17 15:27:41 AEDT 2023","3348","","Autenticacion","","","","Inicio de sesion invalido",""
